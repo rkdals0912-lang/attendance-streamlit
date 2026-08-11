@@ -146,13 +146,15 @@ def push_webhook(record):
 def add_record(action, method="수동"):
     now = datetime.now()
     record = {
-        "작업자": st.session_state.worker or "미선택",
-        "구분": action,
-        "일시": now.strftime("%Y-%m-%d %H:%M:%S"),
-        "방식": method,
-        "위도": st.session_state.current_lat,
-        "경도": st.session_state.current_lon,
-    }
+    "작업반": st.session_state.worker_group,
+    "작업자": st.session_state.worker or "미선택",
+    "구분": action,
+    "일시": now.strftime("%Y-%m-%d %H:%M:%S"),
+    "방식": method,
+    "위도": st.session_state.current_lat,
+    "경도": st.session_state.current_lon,
+}
+    
     st.session_state.records.insert(0, record)
     push_webhook(record)
     return now
