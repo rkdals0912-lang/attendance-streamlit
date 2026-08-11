@@ -118,19 +118,19 @@ def init_state():
 init_state()
 
 def api_url():
-    return str(secret("GOOGLE_APPS_SCRIPT_URL", "")).strip()
+    return str(secret("GOOGLE_APPS_SCRIPT_URL", "https://script.google.com/macros/s/AKfycbxSVEnxSv3t_i2IThTkh1wx6asJ5LHiIX69SGlRidcifCIFGMp5I-5TUuhItJPlR1aa/exec")).strip()
 
 def api_token():
-    return str(secret("API_TOKEN", "")).strip()
+    return str(secret("API_TOKEN", "topseal_api_2026_B4kP8xN2qL7mR5vT9sC3wH6j")).strip()
 
 def device_secret():
-    return str(secret("DEVICE_SECRET", "")).strip()
+    return str(secret("DEVICE_SECRET", "topseal_device_2026_x7K9mQ2vL8pR4nT6sW1zA5cD")).strip()
 
 def company_settings():
     try:
         return (
-            float(secret("COMPANY_LAT")),
-            float(secret("COMPANY_LON")),
+            float(secret("COMPANY_LAT", 36.9366)),
+            float(secret("COMPANY_LON", 127.5348)),
             int(secret("GEOFENCE_RADIUS_M", 150)),
         )
     except Exception:
