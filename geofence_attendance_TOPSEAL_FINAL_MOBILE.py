@@ -234,7 +234,7 @@ with st.sidebar:
     else:
         st.success("관리자 모드")
 
-        with st.expander("👥 직원 관리", expanded=False):
+        with st.expander("👥 직원관리", expanded=False):
             tab1, tab2, tab3 = st.tabs(["신규 추가", "수정/퇴사", "기기 해제"])
 
             with tab1:
