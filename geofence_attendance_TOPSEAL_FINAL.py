@@ -184,7 +184,7 @@ with st.sidebar:
     if not st.session_state.admin:
         pw = st.text_input("관리자 비밀번호", type="password")
         if st.button("관리자 로그인", use_container_width=True):
-            expected = str(secret("ADMIN_PASSWORD", ""))
+            expected = str(secret("ADMIN_PASSWORD", "1384"))
             if expected and hmac.compare_digest(pw, expected):
                 st.session_state.admin = True
                 st.rerun()
