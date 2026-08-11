@@ -64,9 +64,8 @@ st.markdown(
 
 
 # ---------- helpers ----------
-def init_state():
-    defaults = {
-       "",
+worker_options = [
+    "",
     "김도균",
     "안동인",
     "Suresh(수렛)",
@@ -96,6 +95,7 @@ def init_state():
     "Jayanath(자야나스)",
     "Athula(아뚤라)",
     "Samith(사미드)",
+]
         "company_lat": None,
         "company_lon": None,
         "current_lat": None,
