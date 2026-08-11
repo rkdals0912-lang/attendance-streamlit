@@ -118,7 +118,7 @@ def init_state():
 init_state()
 
 def api_url():
-    return str(secret("GOOGLE_APPS_SCRIPT_URL", "https://script.google.com/macros/s/AKfycbxSVEnxSv3t_i2IThTkh1wx6asJ5LHiIX69SGlRidcifCIFGMp5I-5TUuhItJPlR1aa/exec")).strip()
+    return str(secret("GOOGLE_APPS_SCRIPT_URL", "https://script.google.com/macros/s/AKfycbwzISTU5EIR_1oTgMrXfpDZSkJvhS6QJ_svhyh-A8olsJTP7swxfzlx13s6i665WAnp/exec")).strip()
 
 def api_token():
     return str(secret("API_TOKEN", "topseal_api_2026_B4kP8xN2qL7mR5vT9sC3wH6j")).strip()
