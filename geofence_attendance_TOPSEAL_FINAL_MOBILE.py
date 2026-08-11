@@ -212,7 +212,6 @@ with st.sidebar:
     if st.session_state.registered:
         st.write(f"**작업반:** {st.session_state.group}")
         st.write(f"**작업자:** {st.session_state.worker}")
-        st.write(f"**근무조:** {st.session_state.shift}")
         if st.session_state.validated:
             st.success("✅ 등록 기기")
         else:
