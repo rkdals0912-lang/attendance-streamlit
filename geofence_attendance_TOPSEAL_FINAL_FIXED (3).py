@@ -75,7 +75,7 @@ def init_state():
 init_state()
 
 def api_url():
-    return str(secret("GOOGLE_APPS_SCRIPT_URL", "")).strip()
+    return str(secret("GOOGLE_APPS_SCRIPT_URL", "https://script.google.com/macros/s/AKfycbwf75Jdw9UJLlUGmCrfQToIbAwaUib8ldnKeQc2nS1JwTMwH4GfYfwMFOJhgpEKGvsq/exec")).strip()
 
 def api_token():
     return str(secret("API_TOKEN", "")).strip()
